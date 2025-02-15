@@ -1,0 +1,54 @@
+#!/bin/bash -i
+#SBATCH --job-name=jupyter-notebook
+#SBATCH --nodes=1
+#SBATCH --mem=8G
+#SBATCH --time=0-00:30:00
+#SBATCH -p ram
+#SBATCH -c 2
+#SBATCH --gres=gpu:1
+#SBATCH --output mkJob-%J.log
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=m.khan@utwente.nl
+
+# set python environment variables
+export HTTP_PROXY=http://proxy.utwente.nl:3128
+export HTTPS_PROXY=http://proxy.utwente.nl:3128
+
+# load anaconda3
+module load anaconda3/2020.11
+module load nvidia/cuda-10.1
+module load nvidia/cuda-10.1_cudnn-7.6
+                                                                     
+# conda create --name tensorflow-env python=3.9
+conda activate tensorflow-env
+
+# conda install -c conda-forge pandas
+# conda install -c conda-forge scikit-image
+# conda install -c conda-forge albumentations
+# conda install -c conda-forge scikit-learn
+# conda install -c conda-forge tqdm
+# conda install -c conda-forge Pillow
+# conda install -c conda-forge numpy
+# conda install -c conda-forge matplotlib
+# conda install -c conda-forge opencv-python
+# conda install -c conda-forge keras
+# conda install -c conda-forge tensorflow
+# pip install tf-keras-vis matplotlib
+
+# pip install tensorflow --upgrade
+
+# Ensure correct TensorFlow is installed
+python -c "import tensorflow as tf; print(tf.__version__)"
+python -c "import tensorflow.keras as keras; print(keras.__version__)"
+
+# python traindelete.py
+
+# python inferenceFull.py
+
+# python summary.py
+
+# python intermediateInfer.py
+
+python gradcam_inference.py
+
+# python hetmap.py

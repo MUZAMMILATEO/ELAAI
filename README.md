@@ -13,3 +13,9 @@ Download the models and place them in the appropriate directories before running
 - .\MFA_Net\ModelSaveTensorFlow\MFANet_filters_352_17_2024-08-06_12-59-29.h5
 - .\SLIP_Net\experiments\SLIP_ssim_1_diffusion_1\dsc0.999.pth.tar
 
+---
+
+## Contact
+For any questions or collaboration opportunities, reach out to:
+- **Muzammil Khan** (Corresponding Author) – [m.khan@utwente.nl](mailto:m.khan@utwente.nl)
+

@@ -1,21 +1,41 @@
 # ELAAI Framework
 
-This repository contains the implementation of the ELAAI Framework, including **MFA-Net** and **SLIP-Net** models.
+[![DOI](https://zenodo.org/badge/912808784.svg)](https://doi.org/10.5281/zenodo.15624608)
 
-## Model Checkpoints
+This repository implements the **Explainable and Likelihood-Aware AI (ELAAI)** framework, featuring:
 
-The pre-trained model checkpoints for **MFA-Net** and **SLIP-Net** can be accessed via the following links:
-
-- [MFA-Net Model](https://drive.google.com/file/d/18_hG6FWS_Wf7qxi9CvRPujajGLEQkrPK/view?usp=drive_link)
-- [SLIP-Net Model](https://drive.google.com/file/d/1DfUrKidnrZwmjbPDDx-WmttUZyBNX_Mq/view?usp=drive_link)
-
-Download the models and place them in the appropriate directories before running the framework.
-- .\MFA_Net\ModelSaveTensorFlow\MFANet_filters_352_17_2024-08-06_12-59-29.h5
-- .\SLIP_Net\experiments\SLIP_ssim_1_diffusion_1\dsc0.999.pth.tar
+- **MFA-Net**: Multi-scale Feature Aggregation network for robust bladder segmentation  
+- **SLIP-Net**: Swin-Transformer backbone with MSDU head for pixel-level tumour-likelihood estimation  
 
 ---
 
-## Contact
-For any questions or collaboration opportunities, reach out to:
-- **Muzammil Khan** (Corresponding Author) – [m.khan@utwente.nl](mailto:m.khan@utwente.nl)
+## 📂 Model Checkpoints
+
+Pre-trained weights are available for both networks. Please download and place them in the following directories before running experiments:
+
+| Model     | Download Link                                                                                                    | Destination Path                                                                                                  |
+|-----------|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| MFA-Net   | [Google Drive](https://drive.google.com/file/d/18_hG6FWS_Wf7qxi9CvRPujajGLEQkrPK/view?usp=drive_link)              | `./MFA_Net/ModelSaveTensorFlow/MFANet.h5`                                      |
+| SLIP-Net  | [Google Drive](https://drive.google.com/file/d/1DfUrKidnrZwmjbPDDx-WmttUZyBNX_Mq/view?usp=drive_link)              | `./SLIP_Net/experiments/SLIP_ssim_1_diffusion_1/dsc0.999.pth.tar`                                                 |
+
+
+---
+
+## 📦 Code Archive & Citation
+
+The code and data underpinning our publication have been permanently archived and can be referenced via the following DOI badge:
+
+[![DOI](https://zenodo.org/badge/912808784.svg)](https://doi.org/10.5281/zenodo.15624608)
+
+Please cite this DOI in any attribution or reproduction of our work:
+
+---
+
+## 📬 Correspondence
+
+For questions, issues or collaboration inquiries, please contact:
+
+**Dr Muzammil Khan**  
+Robotics & Mechatronics Group, University of Twente  
+✉️ [m.khan@utwente.nl](mailto:m.khan@utwente.nl)  
 

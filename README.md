@@ -4,7 +4,8 @@
 
 This repository implements the **Explainable and Likelihood-Aware AI (ELAAI)** framework, featuring:
 
-- **MFA-Net**: Multi-scale Feature Aggregation network for robust bladder segmentation  
+- **MFA-Net**: Multi-scale Feature Aggregation network for robust bladder segmentation
+- **Refinement Step**: A two-phase strategy to enhance MFA-Net predicted masks
 - **SLIP-Net**: Swin-Transformer backbone with MSDU head for pixel-level tumour-likelihood estimation  
 
 ---
